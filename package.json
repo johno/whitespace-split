@@ -2,7 +2,7 @@
   "name": "whitespace-split",
   "description": "Split a string into words based on whitespace",
   "author": "John Otander",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "ava -v"
