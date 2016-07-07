@@ -1,7 +1,11 @@
 'use strict'
 
-module.exports = function whitespaceSplit (options) {
-  options = options || {}
+var isPresent = require('is-present')
 
-  return true
+module.exports = function whitespaceSplit (str) {
+  if (typeof str !== 'string') {
+    throw new TypeError('whitespace-split expected a string')
+  }
+
+  return str.split(/\s+/).filter(isPresent)
 }

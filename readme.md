@@ -13,7 +13,8 @@ npm install --save whitespace-split
 ```javascript
 var whitespaceSplit = require('whitespace-split')
 
-whitespaceSplit()  // => true
+whitespaceSplit("\t\n this is\na\t\tgroup of words\n\t\n")
+// => ['this', 'is', 'a', 'group', 'of', 'words']
 ```
 
 ## License
